@@ -8,9 +8,6 @@
 # project.foo.article.2020.09.12.foo.md
 
 version: 1
-# imports:
-#   - book
-#   - notes
 schemas:
 - id: article
   title: article
@@ -19,7 +16,6 @@ schemas:
   namespace: true
   children:
     - notes
-#    - journal.journal
 - id: notes
   title: "__ Reading Notes"
   desc: ""
