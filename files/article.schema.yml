@@ -1,11 +1,11 @@
-# schema for books // projects
+# schema for articles
 # the following schema will match the following
 # 
-# project.foo.journal
-# project.foo.journal.2020
-# project.foo.journal.2020.09
-# project.foo.journal.2020.09.12
-# project.foo.journal.2020.09.12.foo.md
+# project.foo.article
+# project.foo.article.2020
+# project.foo.article.2020.09
+# project.foo.article.2020.09.12
+# project.foo.article.2020.09.12.foo.md
 
 version: 1
 # imports:
