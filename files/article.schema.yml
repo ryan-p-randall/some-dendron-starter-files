@@ -1,0 +1,30 @@
+# schema for books // projects
+# the following schema will match the following
+# 
+# project.foo.journal
+# project.foo.journal.2020
+# project.foo.journal.2020.09
+# project.foo.journal.2020.09.12
+# project.foo.journal.2020.09.12.foo.md
+
+version: 1
+# imports:
+#   - book
+#   - notes
+schemas:
+- id: article
+  title: article
+  desc: ""
+  parent: root
+  namespace: true
+  children:
+    - notes
+#    - journal.journal
+- id: notes
+  title: "__ Reading Notes"
+  desc: ""
+  pattern: "notes"
+  namespace: true
+  template:
+    id: article.template.notes
+    type: note
